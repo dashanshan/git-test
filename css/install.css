@@ -1,0 +1,471 @@
+/* 全局样式 */
+body { height:100vh; background: #fff; color: #3D3D3D; }
+.xing { color: #00CC99; margin-right: 0.133333rem; }
+.red { color: #e21024; margin-left:0.053333rem; margin-right:0.053333rem; }
+.green { color: #0c9; }
+.center { text-align: center; }
+input { box-shadow: none; -webkit-appearance:none; }
+
+
+/* 安装页面样式 */
+.mapBox {
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    height: 66vh;
+    /*box-sizing: border-box;*/
+    /*padding: 0.133333rem 0.533333rem;*/
+    /*line-height: 0.8rem;*/
+}
+.mapBox > #mapInfo {
+    padding: 20px;
+}
+.mapBox > div {
+    width: 100%;
+    height: 100%;
+}
+.mapBox > p {
+    padding: 20px;
+}
+.addShop {
+    display: block;
+    color: #fff;
+    background: #00CC99;
+    border: none;
+    font-size: 14px;
+    width: 50vw;
+    /*margin: 0.533333rem 0 0.8rem 25vw;*/
+    margin: 0.4rem 0 0 25vw;
+    padding: 0.32rem;
+    border-radius: 0.8rem;
+}
+/*搜索商铺部分*/
+
+.search {
+    background-color: #F1F0EE;
+    padding-top: 0.586667rem;  /* 22px */
+    min-height: 33vh;
+    box-sizing: border-box;
+    position: relative;
+}
+.search > .header {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+}
+.search > .header > input {
+    display: inline-block;
+    background: #fff;
+    width: 7rem;
+    /*height: 0.426667rem;      !* 16px *!*/
+    height: 0.426667rem;    /* 16px */
+    border: 1px solid #c7c7c7;
+    border-right-color: #E9E9E9;
+    box-shadow: none;
+    padding: 0.266rem 0.16rem;      /* 10px 6px */
+    border-top-left-radius: 0.16rem;      /* 6px */
+    border-bottom-left-radius: 0.16rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.search > .header > div {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    width: 1.8rem;
+    background-color: #fff;
+    height: 0.96rem;      /* 36px */
+    line-height: 0.96rem;      /* 36px */
+    border: 1px solid #c7c7c7;
+    border-left: none;
+    border-top-right-radius: 0.16rem;      /* 6px */
+    border-bottom-right-radius: 0.16rem;
+    position: relative;
+    /*top: -1px;*/
+}
+.search > .header > ul {
+    text-align: left;
+    width: 9rem;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: inherit;
+    box-sizing: border-box;
+    padding: 0 0.213333rem;   /* 8px */
+    position: absolute;
+    left: 0.5rem;
+    margin-bottom: 0.133333rem;    /* 5px */
+}
+.search > .header > ul > li {
+    line-height: 0.853333rem;    /*32px*/
+    border-bottom:1px dotted #ddd;
+}
+.search > .shopInfo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #b7b7b7;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: none;
+}
+.search > .shopInfo > .left {
+    width: 7rem;
+    height: 1.6rem;    /* 60px */
+    box-sizing: border-box;
+    padding: 0.16rem 0 0.16rem 0.213333rem;    /* 6px 0 6px 8px */
+}
+.search > .shopInfo > .left > p {
+    height: 0.72rem;    /* 27px */
+    line-height: 0.72rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.search > .shopInfo > .right {
+    width: 3rem;
+    height:100%;
+}
+.search > .shopInfo > .right > div {
+    width: 1.6rem;    /* 60px */
+    height: 0.693333rem;    /* 26px */
+    line-height: 0.64rem;    /* 24px */
+    border: 1px solid #0c9;
+    color: #0c9;
+    text-align: center;
+    margin: 0.453333rem auto;      /* 17px */
+    border-radius: 0.133333rem;
+}
+.position > span {
+    line-height: 0.8rem;     /* 30px */
+}
+.position > input {
+    border: 1px solid #ddd;
+    padding: 0.213333rem 0.213333rem 0.266667rem;    /* 8px 8px 10px */
+}
+/*地图标记点击弹出的信息框样式*/
+.mapInfo > p.center {
+    text-align: center;
+}
+.mapInfo > p {
+    line-height: 0.533333rem;    /* 20px */
+}
+.mapInfo > button {
+    display: block;
+    margin: 0.106667rem auto;    /* 4px */
+    color: #0c9;
+    background: #fafafb;
+    border: 1px solid #0c9;
+    border-radius: 0.133333rem;
+    padding: 0.15rem 0.3rem;
+}
+/*覆盖弹出框的样式*/
+.layui-m-layer1 .layui-m-layerchild.layui-m-layer-addShopStyle {
+    width: 9rem;
+    border-radius: 0.16rem;
+}
+.layui-m-layer1 .layui-m-layer-addShopStyle .layui-m-layercont {
+    padding: 0.4rem 0.4rem 0.266667rem;
+}
+.layui-m-layer-addShopStyle.layui-m-layerchild h3{
+    height: 1.173333rem;
+    line-height: 1.226667rem;
+    background: #f2f2f2;
+    border-bottom: 1px solid #e8e8e8;
+}
+.layui-m-layer1 .layui-m-layer-addShopStyle .layui-m-layercont > form > div {
+    /*margin-left: 0.213333rem;*/
+    text-align: center;
+    margin-bottom: 0.133333rem;
+}
+.layui-m-layer-addShopStyle label {
+    display: inline-block;
+    height: 1.066667rem;
+    line-height: 1.066667rem;
+}
+.layui-m-layer-addShopStyle input,
+.layui-m-layer-addShopStyle select{
+    width: 5.12rem;
+    height: 0.906667rem;
+    border: 1px solid #CFCFCF;
+    border-radius: 0.133333rem;
+    padding-left: 0.16rem;
+    margin-left: 0.133333rem;
+}
+.layui-m-layer-addShopStyle span {
+    color: #0c9;
+    margin-left: 0.133333rem;
+}
+.layui-m-layer-addShopStyle .time > div {
+    display: inline-block;
+    width: 5.333333rem;
+    margin-left: 0.133333rem;
+}
+.layui-m-layer1 .layui-m-layer-addShopStyle .layui-m-layercont > form > div.point {
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+.layui-m-layer-addShopStyle .time > div input {
+    width: 2.2rem;  /*94px*/
+    height: 0.906667rem;
+    border: 1px solid #CFCFCF;
+    border-radius: 0.133333rem;
+    padding-left: 0.16rem;
+    margin-left: 0;
+}
+.layui-m-layer1 .layui-m-layer-addShopStyle .layui-m-layercont > form > div.location {
+    margin-bottom: 0;
+}
+.layui-m-layer-addShopStyle .location  input {
+     width: 0.533333rem;
+     height: 0.533333rem;
+     border: inherit;
+     border-radius: inherit;
+     padding: 0;
+     margin: 0.133333rem;
+     vertical-align: middle;
+     -webkit-appearance: radio;
+ }
+.layui-m-layer-addShopStyle .perHead input {
+    width: 1.5rem;
+}
+.layui-m-layer-addShopStyle .perHead p {
+    display: inline-block;
+    width: 2.9rem;
+}
+.layui-m-layer-addShopStyle .location > div {
+    display: inline-block;
+    width: 1.633333rem;
+}
+.layui-m-layer-addShopStyle .location p {
+    display: inline-block;
+    width: 5.8rem;
+    text-align: left;
+}
+.layui-m-layer-addShopStyle .layui-m-layerbtn span[no] {
+    color:#333;
+}
+/*覆盖下方弹出框的样式*/
+.ios-select-widget-box.olay {
+    z-index: 20000000;
+}
+
+
+
+/* 提货申请页面样式 */
+.deliveryApply {
+    max-width: 10.0rem;
+    margin: 0 auto;
+}
+.deliveryApply > h1 {
+    color: #0c9;
+    font-size: 18px;
+    height: 1.333333rem;
+    line-height: 1.8rem;
+    text-align: center;
+}
+.deliveryApply > form {
+    padding: 0 0.5rem 0.4rem 0.3rem;
+    font-size:14px;
+}
+.deliveryApply > form > label {
+    height: 1.066667rem;
+}
+.deliveryApply > form > label,
+.deliveryApply > form > div {
+    display: block;
+    text-align: center;
+    line-height: 1.066667rem;
+    margin-bottom: 0.133333rem;
+}
+.deliveryApply > form > label:after {
+    content: '';
+    border: 1px solid transparent;
+}
+.deliveryApply > form > label:first-child {
+    margin-bottom: 0;
+}
+.deliveryApply label > span,
+.deliveryApply > form > div > span {
+    display: inline-block;
+    width: 2.6rem;
+    text-align: center;
+}
+.deliveryApply > form > p {
+    padding: 0.8rem 0.053333rem 0 0.266667rem;
+    text-align: center;
+}
+.deliveryApply label > a {
+    display: inline-block;
+    width:6.0rem;
+    text-align: left;
+}
+.deliveryApply label > input {
+    width: 5.866667rem;
+    height: 0.933333rem;
+    border: 1px solid #ddd;
+    padding-left: 0.16rem;
+    border-radius: 0.053333rem;
+}
+.deliveryApply > form > div > p{
+    text-align: center;
+    margin-bottom: 0.133333rem;
+    color:#777;
+}
+.deliveryApply > form > div > a {
+    display: inline-block;
+    width: 6rem;
+    border: 1px solid transparent;
+    padding-left: 0.16rem;
+    border-radius: 0.053333rem;
+}
+.deliveryApply > form > div > p > span,
+.deliveryApply > form > div > p > input {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 0.133333rem;
+    height: 0.933333rem;
+    line-height: 0.933333rem;
+    text-align: center;
+}
+.deliveryApply .span1 {
+    width: 2.4rem;
+    border: none;
+    vertical-align: middle;
+    margin-right: 0.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.deliveryApply .span3 {
+    width: 2.6rem;
+    margin: 0 0.213333rem;
+    color:#777;
+}
+.deliveryApply .span2,
+.deliveryApply .span4 {
+    width: 1.4rem;
+    border-color: #ccc;
+    font-size: 22px;
+    vertical-align: middle;
+}
+.deliveryApply > form > input {
+    display: block;
+    color: #fff;
+    background: #00CC99;
+    border: 1px solid #0c9;
+    font-size: 14px;
+    width: 50vw;
+    margin: 0.5rem auto 0.3rem;
+    padding: 0.32rem;
+    border-radius: 0.8rem;
+}
+
+
+
+/*提货申请记录页面*/
+.record {
+    height: 100%;
+    background-color: #f2f2f2;
+    font-size:14px;
+}
+.record > header {
+    background-color: #0c9;
+    padding: 0.586667rem 0;  /* 22px 0 */
+}
+.record > header > .header {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+.record > header > .header > input {
+    display: inline-block;
+    background: #fff;
+    width: 7.6rem;      /* 285px */
+    /*height: 0.426667rem;      !* 16px *!*/
+    height: 16px;
+    border: 1px solid #0c9;
+    border-right-color: #E9E9E9;
+    box-shadow: none;
+    /*padding: 0.266rem 0.16rem;      !* 10px 6px *!*/
+    padding: 10px 6px;
+    border-top-left-radius: 0.16rem;      /* 6px */
+    border-bottom-left-radius: 0.16rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.record > header > .header > div {
+    display: inline-block;
+    background: #fff url(../img/search.png) 0.34rem 8px no-repeat;    /* 12px 8px */
+    vertical-align: middle;
+    width: 1.2rem;      /* 45px */
+    /*height: 0.96rem;      !* 36px *!*/
+    height: 36px;
+    border: 1px solid #0c9;
+    border-left: none;
+    border-top-right-radius: 0.16rem;      /* 6px */
+    border-bottom-right-radius: 0.16rem;
+    position: relative;
+    top: -1px;
+}
+.record > ul {
+    list-style: none;
+    margin-bottom: 0.4rem;      /* 15px */
+}
+.record > ul > li {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 10rem;
+    height: 2.133333rem;      /* 80px */
+    margin: 0.266667rem auto 0;      /* 10px */
+    background-color: #fff;
+}
+.record > ul > li > p {
+    height: 2.133333rem;      /* 80px */
+}
+.record > ul > li > p.item {
+    width: 4.666667rem;      /* 175px */
+    box-sizing: border-box;
+    padding: 0.266667rem 0.266667rem 0.4rem;      /* 10px 0 10px 15px */
+}
+.record > ul > li > p.item > span {
+    display: block;
+    height: 0.8rem;      /* 30px */
+    line-height: 0.8rem;      /* 30px */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.record > ul > li > p.rightIcon {
+    width: 0.666667rem;      /* 25px */
+}
+.record > ul > li > p.rightIcon > img {
+    width: 0.533333rem;      /* 20px */
+    margin-top: 0.8rem;      /* 30px */
+}
+/*覆盖提货申请记录弹出框的样式*/
+.layui-m-layer-recordDetail .layui-m-layercont {
+    padding: 0.3rem 0.3rem 0.5rem;
+}
+.layui-m-layer-recordDetail .layui-m-layercont > p > .left,
+.layui-m-layer-recordDetail .layui-m-layercont > p > .right {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0.08rem 0.133333rem;   /* 3px 5px */
+    color: #7b7b7b;
+}
+.layui-m-layer-recordDetail .layui-m-layercont > p > .left {
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+    vertical-align: top;
+}
+.layui-m-layer-recordDetail .layui-m-layercont > p > .right {
+    display: inline-block;
+    width: 70%;
+    text-align: left;
+}
+
+
